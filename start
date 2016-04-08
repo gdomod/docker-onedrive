@@ -1,0 +1,9 @@
+#!/bin/bash
+FILE=/root/.onedrived/accounts.db
+
+if [ -f $FILE ];
+then
+	onedrived
+else
+	onedrived-pref
+fi
